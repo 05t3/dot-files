@@ -1,0 +1,53 @@
+import = ["~/.config/alacritty/themes/themes/inferno.toml"]
+
+live_config_reload = true
+
+[shell]
+program = "/usr/bin/zsh"
+args = ["-l"]
+
+[env]
+TERM = "xterm-256color"
+
+
+[font]
+size = 10.0
+
+[font.offset]
+x = 0
+y = 1
+
+
+[font.bold]
+family = "monospace"
+style = "Bold"
+
+[font.bold_italic]
+family = "monospace"
+style = "Bold Italic"
+
+[font.italic]
+family = "monospace"
+style = "Italic"
+
+[font.normal]
+family = "monospace"
+style = "Regular"
+
+[window]
+blur = true
+opacity = 0.85
+# title = "Alacritty"
+dynamic_title = false
+decorations = "None"
+
+[scrolling]
+history = 100000
+
+[window.padding]
+x = 6
+y = 6
+
+[cursor]
+style = "Beam"
+vi_mode_style = "Block"

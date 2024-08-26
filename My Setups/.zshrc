@@ -1,3 +1,7 @@
+oste@vale:~$ exit
+logout
+Connection to 192.168.1.100 closed.
+➜  Monitor3 cat ~/.zshrc
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -60,6 +64,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:${HOME}/go/bin
+export PATH=$PATH:${HOME}/.pdtm/go/bin
+# Created by `pipx` on 2024-06-27 10:33:39
+export PATH="$PATH:${HOME}/.local/bin"
 
 # Docker Aliases
 alias dcr="sudo docker ps -a"
@@ -69,10 +78,9 @@ alias dcd="sudo docker compose down"
 alias di="sudo docker images"
 
 # VPN Aliases
-alias htb="sudo openvpn ~/Documents/VPN/xxxxx.ovpn"
-alias thm="sudo openvpn ~/Documents/VPN/xxxxx.ovpn"
-alias pg="sudo openvpn ~/Documents/VPN/xxxxx.ovpn"
-alias rt="sudo openvpn ~/Documents/VPN/xxxxx.ovpn"
+alias htbm="sudo openvpn ~/Documents/VPN/htb-machines.ovpn"
+alias htbe="sudo openvpn ~/Documents/VPN/htb-endgames.ovpn"
+alias htse="sudo openvpn ~/Documents/VPN/htb-seasonal.ovpn"
 # alias xxx="sudo openvpn ~/Documents/VPN/xxxxx.ovpn"
 # alias xxx="sudo openvpn ~/Documents/VPN/xxxxx.ovpn"
 # alias xxx="sudo openvpn ~/Documents/VPN/xxxxx.ovpn"
@@ -80,8 +88,18 @@ alias rt="sudo openvpn ~/Documents/VPN/xxxxx.ovpn"
 
 # Nmap Aliases
 
-alias fps="sudo nmap -sCV -T4 -A -p- -oA nmap-results"
-alias feroxd="sudo nmap -sCV -T4 -A -p- -oA nmap-results"
-alias feroxe="sudo nmap -sCV -T4 -A -p- -oA nmap-results"
-# alias feroxd="sudo nmap -sCV -T4 -A -p- -oA nmap-results"
+alias fpsw="sudo nmap -sCV -T4 -A -p- -v -Pn -oA nmap-results"
+alias fpsl="sudo nmap -sCV -T4 -A -p- -v -oA nmap-results"
+alias anarchy="/opt/username-anarchy/anarchy"
+alias hunt="cat ~/Desktop/commands.txt | grep "
 
+# Misc Aliases
+
+alias z="nano ~/.zshrc"
+alias pc="pwncat-cs -lp"
+alias lp="cp ~/Documents/Tools/compiled-binaries/Scripts/linpeas.sh ."
+alias serve="echo "Web server URL: http://$(ifconfig tun0 | grep 'inet ' | awk '{print $2}'):8080/" && python3 -m http.server 8080"
+
+# SSH Sessions
+alias vale="ssh xxxxx@xxx.xx.xx.xx"
+alias rt="ssh xxxx@xxx.xx.xx.xx"

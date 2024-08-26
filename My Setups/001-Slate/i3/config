@@ -188,7 +188,7 @@ mode "resize" {
 
 # Autostart Applications
 
-exec_always --no-startup-id /usr/bin/nitrogen --set-zoom-fill ~/Pictures/Wallpapers/0163.jpg &
+exec_always --no-startup-id /usr/bin/nitrogen --set-zoom-fill ~/Pictures/Wallpapers/0001.jpg &
 
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --restore &
 
