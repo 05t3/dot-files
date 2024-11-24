@@ -130,7 +130,7 @@ Bumblebee-Status is a modular, theme-able status line generator for the i3 windo
 
 ```bash
 # KALI - bumblebee-status
-pip install --user bumblebee-status
+sudo apt install bumblebee-status
 ```
 
 ### Oh My Zsh (Zsh Configuration)
